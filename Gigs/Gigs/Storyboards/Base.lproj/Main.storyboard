@@ -60,7 +60,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="V0y-RY-50i" kind="presentation" identifier="ToSignUpSignIn" id="iyh-NU-MdL"/>
+                        <segue destination="V0y-RY-50i" kind="presentation" identifier="LoginViewModalSegue" id="iyh-NU-MdL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2f-g7-nbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,13 +182,13 @@
                                         <rect key="frame" x="0.0" y="36" width="382" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kt3-y0-bn3">
                                         <rect key="frame" x="0.0" y="74" width="382" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-Mc-cXQ">
                                         <rect key="frame" x="0.0" y="112" width="382" height="30"/>

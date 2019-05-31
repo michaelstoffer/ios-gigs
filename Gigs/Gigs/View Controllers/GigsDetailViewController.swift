@@ -15,25 +15,34 @@ class GigsDetailViewController: UIViewController {
     @IBOutlet var dueDatePicker: UIDatePicker!
     @IBOutlet var descriptionTextView: UITextView!
     
+    var gigController: GigController!
+    var gig: Gig?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.updateViews()
     }
     
     // MARK: - @IBActions and Methods
     @IBAction func saveGig(_ sender: UIBarButtonItem) {
+        guard let title = self.titleTextField.text,
+            let description = self.descriptionTextView.text else { return }
+        let dueDate = self.dueDatePicker.date
+        
+        self.gigController.createGig(withTitle: title, withDescription: description, withDueDate: dueDate) { (_) in
+            DispatchQueue.main.async {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func updateViews() {
+        if let gig = self.gig {
+            self.titleTextField.text = gig.title
+            self.descriptionTextView.text = gig.description
+            self.dueDatePicker.date = gig.dueDate
+        } else {
+            self.title = "New Gig"
+        }
     }
-    */
-
 }

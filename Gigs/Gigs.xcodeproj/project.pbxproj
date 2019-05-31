@@ -17,6 +17,7 @@
 		D6BCA57A229E270D00AA0CB7 /* Gig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCA579229E270D00AA0CB7 /* Gig.swift */; };
 		D6BCA57C229E278900AA0CB7 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCA57B229E278800AA0CB7 /* Bearer.swift */; };
 		D6BCA57E229E27FE00AA0CB7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCA57D229E27FE00AA0CB7 /* User.swift */; };
+		D6BCA580229E28A800AA0CB7 /* GigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCA57F229E28A800AA0CB7 /* GigController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D6BCA579229E270D00AA0CB7 /* Gig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gig.swift; sourceTree = "<group>"; };
 		D6BCA57B229E278800AA0CB7 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		D6BCA57D229E27FE00AA0CB7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D6BCA57F229E28A800AA0CB7 /* GigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,9 @@
 		D6BCA572229E1B0900AA0CB7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D6BCA575229E1C7200AA0CB7 /* LoginViewController.swift */,
 				D6BCA56E229E1ACB00AA0CB7 /* GigsTableViewController.swift */,
 				D6BCA577229E259A00AA0CB7 /* GigsDetailViewController.swift */,
+				D6BCA575229E1C7200AA0CB7 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 		D6BCA573229E1B1300AA0CB7 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6BCA57F229E28A800AA0CB7 /* GigController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6BCA576229E1C7200AA0CB7 /* LoginViewController.swift in Sources */,
+				D6BCA580229E28A800AA0CB7 /* GigController.swift in Sources */,
 				D6BCA578229E259A00AA0CB7 /* GigsDetailViewController.swift in Sources */,
 				D6BCA57C229E278900AA0CB7 /* Bearer.swift in Sources */,
 				D6BCA55D229E132500AA0CB7 /* AppDelegate.swift in Sources */,
